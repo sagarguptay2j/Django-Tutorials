@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Just Quiz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="{% static 'css/mycss.css' %}">
+    </head>
+    <body>
+       <nav id="navbar" class="desktop_navbar">
+           <div id="mobile_navbar">
+           <h1 id="brandname">Just Quiz</h1>
+           <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+            <ul id="navbar_menu" class="before_menu">
+               <a href="#">About us</a>
+               <a href="#">How to use</a>
+               <a href="#">Contact</a>
+               <a href="#">Login</a>
+               <a href="#" id="signup">SignUp</a>
+           </ul>
+
+       </nav>
+
+       <div id="section1" class="text-left">
+          <div class="container" id="section1_contents">
+              <div class="row">
+                  <div class="col-12 col-md-6" id="slogan_contents">
+                      <div id="tagline">The simplest quiz tool to create quizzes</div>
+                      <h1>Make Learning Awesome</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <a href="#" id="signup">SignUp</a>
+                  </div>
+                  <div class="col-12 col-md-6" id="picture_elements">
+                      <div id="header_video">
+                        <video autoplay="autoplay" controls muted>
+                            <source src="C:\Users\dell\Downloads\MIND_INSTALL_PROJECT_VIDEO.mp4"  type="video/mp4">
+                            <source src="mov_bbb.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                        </video>
+                      </div>
+                      <div id="header_svg">
+
+<svg viewBox="0 0 1226 849" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1226" height="849" fill="#15141B"/>
+    <g id="Mask Group">
+    <g id="Desktop - 1" clip-path="url(#clip0)">
+    <rect width="1226" height="849" fill="#15141B"/>
+    <path class="Line_1 Line" d="M370 -16L107 273" stroke="#D0F224" stroke-width="5"/>
+    <path class="Line_2 Line" d="M357.5 218.5L14 556.5" stroke="#BBBBBB" stroke-width="2"/>
+    <line class="Line_3 Line" x1="752.779" y1="1.75625" x2="293.779" y2="466.756" stroke="#D0F224" stroke-width="5"/>
+    <path class="Line_4 Line" d="M1118.3 110.33L928.511 326.339L738.723 542.347" stroke="#BBBBBB" stroke-width="2"/>
+    <path class="Line_5 Line" d="M775.909 241L370.262 715.799" stroke="#D0F224" stroke-width="5"/>
+    <path class="Line_6 Line" d="M1202.79 433.25L873 789.664" stroke="#BBBBBB" stroke-width="2"/>
+    </g>
+    </g>
+    <defs>
+    <clipPath id="clip0">
+    <rect width="1226" height="849" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+
+                      </div>
+                </div>
+           </div>
+
+        </div>
+    </div>
+       </div>
+
+    <div id="section2">
+       <h1 id="work">How does <span>Just Quiz </span>work?</h1>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4 col-12" >
+                   <div class="card"  id="work_card">
+                       <img class="card-img-top" src="{% static 'images/create.svg' %}" alt="Card image cap">
+                       <div class="card-body">
+                         <h5 class="card-title">Create</h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                       </div>
+                     </div>
+
+               </div>
+               <div class="col-md-4 col-12" >
+                   <div class="card"  id="work_card">
+                       <img class="card-img-top" src="{% static 'images/host_and_share.svg' %}" alt="Card image cap">
+                       <div class="card-body">
+                         <h5 class="card-title">Host and share</h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                       </div>
+                     </div>
+
+               </div>
+               <div class="col-md-4 col-12" >
+                   <div class="card"  id="work_card">
+                       <img class="card-img-top" src="{% static 'images/play.svg' %}" alt="Card image cap">
+                       <div class="card-body">
+                         <h5 class="card-title">Play</h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                       </div>
+                     </div>
+
+               </div>
+
+           </div>
+       </div>
+    </div>
+
+
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row text-center">
+        <div class="col-md-4 col-12" id="footer_div">
+            <p>© 2020 Quiz Inc.</p>
+             Follow us
+                     <a href="#"><i id="footer_icon" class="fa fa-twitter" aria-hidden="true"></i></a></a>
+                     <a href="#"><i id="footer_icon" class="fa fa-instagram" aria-hidden="true"></i></a></a>
+                     <a href="#"><i id="footer_icon" class="fa fa-facebook" aria-hidden="true"></i></a></a>
+                     <a href="#"><i id="footer_icon" class="fa fa-linkedin" aria-hidden="true"></i></a></a>
+        </div>
+        <div class="col-md-4 col-12" id="footer_div">
+            <a href="#">About us</a><br>
+            <a href="#">Our Blog</a><br>
+             <a href="#">Sitemap</a><br>
+        </div>
+        <div class="col-md-4 col-12" id="footer_div">
+            <form action="#">
+                <a href="#">Terms of Service</a><br>
+                <a href="#">Privacy Policy</a><br>
+            </form>
+        </div>
+    </div>
+</div>
+    </footer>
+
+
+
+
+       <script>
+           $(document).ready(function(){
+	$('#hamburger').click(function(){
+		$(this).toggleClass('open');
+        $('.before_menu').toggleClass('onclick_navbar_menu');
+        $('.desktop_navbar').toggleClass('onclick_navbar');
+
+
+	});
+});
+       </script>
+
+
+
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

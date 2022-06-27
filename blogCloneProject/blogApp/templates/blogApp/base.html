@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default techfont custom-navbar">
+      <ul class="nav navbar-nav">
+        <li><a class="navbar-brand bigbrand" href="{% url 'blogApp:post_list' %}">Home</a></li>
+        <li><a class="navbar-link" href="{% url 'blogApp:about' %}"></a></li>
+        <li><a class="navbar-link" href="https:\\www.github.com">Github</a></li>
+        <li><a class="navbar-link" href="https:\\www.linkendl.com">Linkindl</a></li>
+      </ul>
+
+
+      <ul class='nav navbar-nav navbar-right' >
+        {% if user.is_authenticated %}
+         <li><a class="navbar-link" href="{% url 'blogApp:post_new' %}">Create Post</a></li>
+         <li><a class="navbar-link" href="{% url 'blogApp:draft_list' %}">Drafts</a></li>
+         <li><a class="navbar-link" href="{% url 'logout' %}">Logout</a></li>
+         <li><a >Welcome:{{ user.username }}</a></li>
+
+         {% else %}
+         <li><a class="navbar-link" href="{% url 'login' %}"><span class="glyphicon glyphicon-user"></span></a></li>
+
+        {% endif %}
+      </ul>
+
+
+    </nav>
+
+  </body>
+</html>
